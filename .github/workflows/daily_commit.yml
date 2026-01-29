@@ -2,10 +2,9 @@ name: Daily ML Auto Commit
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # 02:30 UTC (morning)
-    - cron: '30 14 * * *'  # 14:30 UTC (evening)
+    - cron: '30 2 * * *'    # 02:30 UTC (08:00 IST)
+    - cron: '30 14 * * *'   # 14:30 UTC (20:00 IST)
   workflow_dispatch:
-
 
 jobs:
   commit-job:
@@ -29,9 +28,22 @@ jobs:
           python ml_log.py
 
       - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
+          messages=(
+            "Log ML training metrics"
+            "Update experiment results"
+            "Track model performance"
+            "Add training run statistics"
+            "Update ML evaluation metrics"
+          )
+
+          RANDOM_MSG=${messages[$RANDOM % ${#messages[@]}]}
+
           git add .
-          git commit -m "Daily ML training log update" || echo "No changes"
-          git push
+          git commit -m "$RANDOM_MSG" || echo "No changes to commit"
+          git push origin main
