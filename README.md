@@ -35,12 +35,12 @@ Perfect for **Data Science / ML / Analyst / DevOps portfolios**.
 
 auto-commit-ml/
 │
-├── ml_log.py # Python script that simulates ML training
-├── requirements.txt # Python dependencies
-├── training_log.txt # Auto-generated ML logs
+├── ml_log.py              # Python script that simulates ML training
+├── requirements.txt       # Python dependencies
+├── training_log.txt       # Auto-generated ML logs
 └── .github/
-└── workflows/
-└── daily_commit.yml # GitHub Actions workflow
+      └── workflows/
+            └── daily_commit.yml # GitHub Actions workflow
 ```
 
 ---
