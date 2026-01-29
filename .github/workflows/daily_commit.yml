@@ -2,8 +2,10 @@ name: Daily ML Auto Commit
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # Runs daily at 02:30 UTC
+    - cron: '30 2 * * *'   # 02:30 UTC (morning)
+    - cron: '30 14 * * *'  # 14:30 UTC (evening)
   workflow_dispatch:
+
 
 jobs:
   commit-job:
