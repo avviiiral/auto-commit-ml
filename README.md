@@ -1,72 +1,81 @@
-# 🤖 Daily ML Auto Commit using GitHub Actions
+# 🤖 Automated ML Activity with GitHub Actions (Daily Auto Commits)
 
-This repository demonstrates how to automate **daily GitHub commits** using **Python, Machine Learning–style logging, and GitHub Actions** — without using a local laptop.
+This repository demonstrates a **fully automated Machine Learning–style workflow** using **Python and GitHub Actions** that generates **natural-looking daily GitHub commits without using a local machine**.
 
-The workflow runs on GitHub’s cloud infrastructure and updates a training log every day, simulating a real ML experimentation process.
+The automation runs entirely on GitHub’s cloud infrastructure and simulates real ML experimentation with **randomized metrics, delays, and commit messages**.
 
 ---
 
 ## 🚀 What This Project Does
 
-- Runs a **Python script daily**
-- Simulates **Machine Learning training metrics**
-- Automatically **commits changes to GitHub**
-- Uses **GitHub Actions** (CI/CD)
-- Requires **no local machine or manual work**
+- Runs a **Python ML-style script automatically**
+- Generates **realistic ML metrics** (accuracy, precision, recall, loss)
+- Introduces a **random execution delay** on each run
+- Uses **different commit messages every time**
+- Commits and pushes changes **twice per day automatically**
+- Requires **no laptop or manual intervention**
 
 ---
 
-## 🧠 Why This Project?
+## 🧠 Why This Project Exists
 
-This project showcases:
-- Python automation
-- ML-style experiment logging
-- GitHub Actions (DevOps basics)
-- CI/CD pipelines
+This project is designed to showcase:
+- Python automation skills
+- Machine Learning experiment logging
+- GitHub Actions (CI/CD & DevOps fundamentals)
 - Cloud-based workflows
+- Clean, recruiter-safe GitHub activity
 
-Perfect for **Data Science / ML / Analyst / DevOps portfolios**.
+This is **not fake commit spam** — every commit updates real data.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-
 auto-commit-ml/
 │
-├── ml_log.py              # Python script that simulates ML training
-├── requirements.txt       # Python dependencies
-├── training_log.txt       # Auto-generated ML logs
+├── ml_log.py                     # Python script simulating ML training runs
+├── requirements.txt              # Python dependencies
+├── training_log.txt              # Auto-generated experiment logs
 └── .github/
       └── workflows/
-            └── daily_commit.yml # GitHub Actions workflow
+            └── daily_commit.yml  # GitHub Actions automation
 ```
 
 ---
 
 ## ⚙️ How It Works
 
-1. **GitHub Actions** triggers the workflow daily (cron job)
-2. Python script runs:
-   - Generates random ML metrics (accuracy, loss)
+1. **GitHub Actions** triggers the workflow on a fixed schedule (cron)
+2. The Python script:
+   - Waits for a random delay (to avoid robotic timing)
+   - Generates random ML metrics
    - Appends results to `training_log.txt`
-3. Workflow commits and pushes changes automatically
+3. The workflow:
+   - Selects a random commit message
+   - Commits and pushes changes automatically
 
 ---
 
-## ⏰ Workflow Schedule
+## ⏰ Automation Schedule
 
-The workflow runs **once every day automatically**  
-(Also supports manual trigger via GitHub Actions UI)
+The workflow runs **twice daily**:
+
+| UTC Time | IST (India) |
+|--------|-------------|
+| 02:30  | 08:00 AM |
+| 14:30  | 08:00 PM |
+
+Manual runs are also supported via the **Actions** tab.
 
 ---
 
-## 📊 Sample Output
+## 📊 Sample Training Log Output
 
 ```
-2026-01-29 02:30:01 | accuracy=0.9452 | loss=0.0314
-2026-01-30 02:30:01 | accuracy=0.9123 | loss=0.0541
+2026-01-29 02:31:12 | accuracy=0.9421 | precision=0.9314 | recall=0.9042 | loss=0.0371
+2026-01-29 14:32:45 | accuracy=0.9173 | precision=0.9025 | recall=0.8896 | loss=0.0518
 ```
 
 ---
@@ -83,19 +92,21 @@ The workflow runs **once every day automatically**
 
 ## ✅ Key Highlights
 
-- No fake commits — every commit modifies real data
-- Fully cloud-based automation
+- Randomized execution delay for natural timing
+- Different commit messages per run
+- Realistic ML experiment metrics
+- Fully automated & cloud-based
 - Recruiter-friendly and transparent
-- Easily extendable to real ML models
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Possible Extensions
 
-- Train a real ML model (scikit-learn)
-- Log metrics to CSV / database
+- Train a real ML model using scikit-learn
+- Log metrics to CSV or database
 - Auto-update Jupyter notebooks
-- Integrate Power BI / dashboards
+- Integrate dashboards (Power BI / Tableau)
+- Weekly heavy training runs
 
 ---
 
@@ -106,4 +117,4 @@ Aspiring Data Scientist | Python | SQL | Power BI | Machine Learning
 
 ---
 
-⭐ If you like this project, feel free to star the repository!
+⭐ If you find this project useful, feel free to star the repository!
