@@ -1,0 +1,35 @@
+name: Daily ML Auto Commit
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # Runs daily at 02:30 UTC
+  workflow_dispatch:
+
+jobs:
+  commit-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run ML script
+        run: |
+          python ml_log.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Daily ML training log update" || echo "No changes"
+          git push
