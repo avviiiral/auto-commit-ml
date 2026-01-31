@@ -28,11 +28,9 @@ jobs:
           python ml_log.py
 
       - name: Commit changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "avviiiral"
+          git config --global user.email "aviralgoyal739@gmail.com"
 
           messages=(
             "Log ML training metrics"
@@ -46,4 +44,4 @@ jobs:
 
           git add .
           git commit -m "$RANDOM_MSG" || echo "No changes to commit"
-          git push origin main
+          git push
