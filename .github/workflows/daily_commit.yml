@@ -44,4 +44,4 @@ jobs:
 
           git add .
           git commit -m "$RANDOM_MSG" || echo "No changes to commit"
-          git push
+          git push origin main
