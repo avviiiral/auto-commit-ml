@@ -1,120 +1,125 @@
-# 🤖 Automated ML Activity with GitHub Actions (Daily Auto Commits)
+# 🚀 Auto ML Training Logger with GitHub Actions
 
-This repository demonstrates a **fully automated Machine Learning–style workflow** using **Python and GitHub Actions** that generates **natural-looking daily GitHub commits without using a local machine**.
-
-The automation runs entirely on GitHub’s cloud infrastructure and simulates real ML experimentation with **randomized metrics, delays, and commit messages**.
+This repository demonstrates an automated Machine Learning activity logger using Python and GitHub Actions.  
+It simulates ML training runs, logs model metrics, and automatically commits updates on a scheduled basis — helping maintain consistent GitHub activity.
 
 ---
 
-## 🚀 What This Project Does
+## 📌 What This Project Does
 
-- Runs a **Python ML-style script automatically**
-- Generates **realistic ML metrics** (accuracy, precision, recall, loss)
-- Introduces a **random execution delay** on each run
-- Uses **different commit messages every time**
-- Commits and pushes changes **twice per day automatically**
-- Requires **no laptop or manual intervention**
+- Simulates ML training metrics (accuracy, precision, recall, loss)
+- Introduces a random delay to mimic real training time
+- Appends results to a training log file
+- Uses GitHub Actions to auto-commit changes daily
+- Keeps GitHub contribution graph active 📊
 
 ---
 
 ## 🧠 Why This Project Exists
 
-This project is designed to showcase:
-- Python automation skills
-- Machine Learning experiment logging
-- GitHub Actions (CI/CD & DevOps fundamentals)
-- Cloud-based workflows
-- Clean, recruiter-safe GitHub activity
+- Practice GitHub Actions automation
+- Demonstrate ML experiment logging
+- Learn CI/CD basics for ML workflows
+- Maintain consistent GitHub contributions in a meaningful way
 
-This is **not fake commit spam** — every commit updates real data.
+> ⚠️ Note: This project focuses on automation & logging, not actual model training.
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
+
+- Python 3.11
+- GitHub Actions
+- Linux (Ubuntu runner)
+- Cron scheduling
+
+---
+
+## 📂 Project Structure
 
 ```
 auto-commit-ml/
 │
-├── ml_log.py                     # Python script simulating ML training runs
-├── requirements.txt              # Python dependencies
-├── training_log.txt              # Auto-generated experiment logs
+├── ml_log.py                 # Simulates ML training & logs metrics
+├── training_log.txt          # Auto-generated training logs
+├── requirements.txt          # Python dependencies
 └── .github/
-      └── workflows/
-            └── daily_commit.yml  # GitHub Actions automation
+    └── workflows/
+        └── auto-commit-ml.yml # GitHub Actions workflow
 ```
 
 ---
 
 ## ⚙️ How It Works
 
-1. **GitHub Actions** triggers the workflow on a fixed schedule (cron)
-2. The Python script:
-   - Waits for a random delay (to avoid robotic timing)
+1. GitHub Actions triggers the workflow (scheduled or manual)
+2. Python script runs:
+   - Waits for a random delay
    - Generates random ML metrics
-   - Appends results to `training_log.txt`
-3. The workflow:
-   - Selects a random commit message
-   - Commits and pushes changes automatically
+   - Appends results to training_log.txt
+3. GitHub Action commits the updated log file to main
+4. Contribution graph updates automatically 🟩
 
 ---
 
 ## ⏰ Automation Schedule
 
-The workflow runs **twice daily**:
+The workflow runs twice daily:
 
-| UTC Time | IST (India) |
-|--------|-------------|
-| 02:30  | 08:00 AM |
-| 14:30  | 08:00 PM |
+| Time (UTC) | Time (IST) |
+|-----------|-----------|
+| 02:30     | 08:00     |
+| 14:30     | 20:00     |
 
-Manual runs are also supported via the **Actions** tab.
+Manual execution is also supported via workflow_dispatch.
 
 ---
 
-## 📊 Sample Training Log Output
+## 📊 Sample Log Entry
 
 ```
-2026-01-29 02:31:12 | accuracy=0.9421 | precision=0.9314 | recall=0.9042 | loss=0.0371
-2026-01-29 14:32:45 | accuracy=0.9173 | precision=0.9025 | recall=0.8896 | loss=0.0518
+2025-01-31 14:30:12 | accuracy=0.9473 | precision=0.9124 | recall=0.9018 | loss=0.0342
 ```
 
 ---
 
-## 🛠 Technologies Used
+## 🚦 How to Run Locally (Optional)
 
-- Python
-- GitHub Actions
-- GitHub CI/CD
-- Machine Learning concepts
-- Cloud automation
+```bash
+pip install -r requirements.txt
+python ml_log.py
+```
 
----
-
-## ✅ Key Highlights
-
-- Randomized execution delay for natural timing
-- Different commit messages per run
-- Realistic ML experiment metrics
-- Fully automated & cloud-based
-- Recruiter-friendly and transparent
+This will append a new entry to training_log.txt.
 
 ---
 
-## 🔮 Possible Extensions
+## 🧩 Key Learning Outcomes
 
-- Train a real ML model using scikit-learn
-- Log metrics to CSV or database
-- Auto-update Jupyter notebooks
-- Integrate dashboards (Power BI / Tableau)
-- Weekly heavy training runs
+- GitHub Actions & cron jobs
+- Automating commits safely
+- Logging ML experiment metrics
+- CI/CD fundamentals for ML projects
+- Clean GitHub activity practices
+
+---
+
+## 🔮 Future Enhancements
+
+- CSV / JSON experiment logging
+- README auto-update with latest metrics
+- Real ML model integration
+- Visualization of training metrics
+- Cloud storage integration (S3 / GCS)
 
 ---
 
 ## 👤 Author
 
-**Aviral Goyal**  
-Aspiring Data Scientist | Python | SQL | Power BI | Machine Learning
+Aviral Goyal  
+GitHub: https://github.com/avviiiral
 
 ---
 
-⭐ If you find this project useful, feel free to star the repository!
+## ⭐ If you find this useful
+Give the repo a ⭐ — it helps and motivates further improvements!
