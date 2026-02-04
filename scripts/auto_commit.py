@@ -15,7 +15,7 @@ commit_count = random.randint(3, 5)
 print(f"Chosen repo: {repo}")
 print(f"Commits today: {commit_count}")
 
-clone_url = f"https://{TOKEN}@github.com/{repo}.git"
+clone_url = f"https://x-access-token:{TOKEN}@github.com/{repo}.git"
 subprocess.run(["git", "clone", clone_url], check=True)
 
 os.chdir(repo_name)
