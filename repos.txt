@@ -1,0 +1,6 @@
+avviiiral/Bank-Note-Authentication-using-Random-Forest
+avviiiral/Employee-Salary-Prediction-using-Linear-Regression
+avviiiral/Breast-Cancer-Classification-with-a-simple-Neural-Network-NN-
+avviiiral/E-Commerce-Customer-Spending-Analysis-Linear-Regration-
+avviiiral/Logistic-Regression-Classification-Project
+avviiiral/Polynomial-Regression-on-Auto-Dataset-
