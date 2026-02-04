@@ -20,8 +20,8 @@ subprocess.run(["git", "clone", clone_url], check=True)
 
 os.chdir(repo_name)
 
-subprocess.run(["git", "config", "user.name", "Aviral Goyal"])
-subprocess.run(["git", "config", "user.email", "YOUR_GITHUB_EMAIL"])
+subprocess.run(["git", "config", "user.name", "avviiiral"])
+subprocess.run(["git", "config", "user.email", "aviralgoyal739@gmail.com"])
 
 for i in range(commit_count):
     filename = f"auto_{int(time.time())}_{i}.txt"
