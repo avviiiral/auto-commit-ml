@@ -106,13 +106,13 @@ Value: <your_token_here>
 ![Workflow Running](screenshots/workflow-running.png.png)
 
 ### ❌ Failed Run (Debugging)
-![Workflow Failed](screenshots/workflow-failed.png)
+![Workflow Failed](screenshots/workflow-failed.png.png)
 
 ### 🟢 Successful Commits
-![Workflow Success](screenshots/workflow-success.png)
+![Workflow Success](screenshots/workflow-success.png.png)
 
 ### 🌱 Contribution Graph
-![Contribution Graph](screenshots/contribution-graph.png)
+![Contribution Graph](screenshots/contribution-graph.png.png)
 
 ---
 
