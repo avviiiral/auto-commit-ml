@@ -1,6 +1,9 @@
+avviiiral/Plant-Disease-Prediction-with-CNN
+avviiiral/HR_Analisis
+avviiiral/MNIST_Digit_Classification_with_Neural_Network
 avviiiral/Bank-Note-Authentication-using-Random-Forest
+avviiiral/Polynomial-Regression-Auto-Dataset
+avviiiral/Logistic-Regression-Classification
+avviiiral/E-Commerce-Customer-Spending-Analysis
 avviiiral/Employee-Salary-Prediction-using-Linear-Regression
-avviiiral/Breast-Cancer-Classification-with-a-simple-Neural-Network-NN-
-avviiiral/E-Commerce-Customer-Spending-Analysis-Linear-Regration-
-avviiiral/Logistic-Regression-Classification-Project
-avviiiral/Polynomial-Regression-on-Auto-Dataset-
+avviiiral/Breast-Cancer-Classification-Neural-Network
