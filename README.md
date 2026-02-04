@@ -103,7 +103,7 @@ Value: <your_token_here>
 > Upload images to the repository and update paths below.
 
 ### ✅ GitHub Actions – Workflow Running
-![Workflow Running](screenshots/workflow-running.png)
+![Workflow Running](screenshots/workflow-running.png.png)
 
 ### ❌ Failed Run (Debugging)
 ![Workflow Failed](screenshots/workflow-failed.png)
