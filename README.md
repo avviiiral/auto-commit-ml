@@ -129,39 +129,39 @@ This avoids spam-like behavior and mimics real development activity.
 
 🟢 Contribution Graph Notes
 
-To ensure commits show as green squares:
+- To ensure commits show as green squares:
 
-Use the same email as your GitHub account
+- Use the same email as your GitHub account
 
-Commits must be pushed to the default branch
+- Commits must be pushed to the default branch
 
 ---
 
 ⚠️ Important Notes
 
-This project is for learning GitHub Actions & automation
+- This project is for learning GitHub Actions & automation
 
-Avoid abusing automated commits
+- Avoid abusing automated commits
 
-Keep commits meaningful in real projects
+- Keep commits meaningful in real projects
 
 ---
 
 🚀 Possible Enhancements
 
-Skip weekends
+- Skip weekends
 
-Avoid repeating the same repo
+- Avoid repeating the same repo
 
-Randomize execution time per day
+- Randomize execution time per day
 
-Commit real code changes instead of dummy files
+- Commit real code changes instead of dummy files
 
 ---
 
 📜 License
 
-MIT License
+- MIT License
 
 ---
 
