@@ -7,3 +7,4 @@ avviiiral/Logistic-Regression-Classification
 avviiiral/E-Commerce-Customer-Spending-Analysis
 avviiiral/Employee-Salary-Prediction-using-Linear-Regression
 avviiiral/Breast-Cancer-Classification-Neural-Network
+avviiiral/Gemini-Chatbot
