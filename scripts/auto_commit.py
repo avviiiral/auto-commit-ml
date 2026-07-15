@@ -20,8 +20,14 @@ subprocess.run(["git", "clone", clone_url], check=True)
 
 os.chdir(repo_name)
 
-subprocess.run(["git", "config", "user.name", "avviiiral"])
-subprocess.run(["git", "config", "user.email", "aviralgoyal739@gmail.com"])
+subprocess.run(["git", "config", "user.name", "avviiiral"], check=True)
+subprocess.run(["git", "config", "user.email", "aviralgoyal739@gmail.com"], check=True)
+
+# Make sure origin always uses the token
+subprocess.run(
+    ["git", "remote", "set-url", "origin", clone_url],
+    check=True
+)
 
 for i in range(commit_count):
     filename = f"auto_{int(time.time())}_{i}.txt"
@@ -31,6 +37,6 @@ for i in range(commit_count):
     subprocess.run(["git", "add", "."], check=True)
     subprocess.run(["git", "commit", "-m", f"auto commit {i+1}"], check=True)
 
-    time.sleep(random.randint(60, 300))  # spacing commits
+    time.sleep(random.randint(60, 300))
 
-subprocess.run(["git", "push"], check=True)
+subprocess.run(["git", "push", "origin", "main"], check=True)
