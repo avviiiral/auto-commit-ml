@@ -6,6 +6,17 @@ on:
   workflow_dispatch:
 
 jobs:
+  - name: Verify GH_PAT exists
+    run: |
+      if [ -z "$GH_PAT" ]; then
+        echo "GH_PAT is empty"
+        exit 1
+      else
+        echo "GH_PAT is present"
+        echo "Length: ${#GH_PAT}"
+      fi
+    env:
+      GH_PAT: ${{ secrets.GH_PAT }}
   commit:
     runs-on: ubuntu-latest
     steps:
